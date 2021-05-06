@@ -35,7 +35,7 @@ public class BeginnerControllerTest {
     void setUp(){
         beginnerList = new ArrayList<>();
         beginnerList.add(new Beginner(1L, "Juan", "Perez", "12345678",
-                "Av. No se 123", "987654321", "juan.perez@upc.edu.pe"));
+  "Av. No se 123", "987654321", "juan.perez@upc.edu.pe"));
         beginnerList.add(new Beginner(2L, "Juan", "Perez", "12345678",
                 "Av. No se 123", "987654321", "juan.perez@upc.edu.pe"));
         beginnerList.add(new Beginner(3L, "Juan", "Perez", "12345678",
