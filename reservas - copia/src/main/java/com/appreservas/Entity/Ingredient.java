@@ -1,0 +1,27 @@
+package com.appreservas.Entity;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import javax.persistence.*;
+import java.io.Serializable;
+import java.util.Date;
+
+@Entity
+@Table(name="ingredient")
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class ingredient implements Serializable {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    @Column(name = "Description", nullable = true,length = 200)
+    private String description;
+    @Column(name = "firstname",nullable = false, length = 50)
+    private String firstname;
+
+}
