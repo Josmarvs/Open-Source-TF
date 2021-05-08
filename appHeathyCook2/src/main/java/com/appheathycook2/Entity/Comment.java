@@ -25,17 +25,9 @@ public class Comment implements Serializable {
     @Column(name = "publication_Date",nullable = false)
     @Temporal(TemporalType.DATE)
     private Date publication_Date;
-    //@ManyToOne(fetch = FetchType.LAZY)
-    //@JoinColumn(name = "chef_id",nullable = false)
-    //@JsonIgnoreProperties({"hibernateLazyInitializer","handler"})
-    //private Chef chef;
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "beginner_id",nullable = false)
     @JsonIgnoreProperties({"hibernateLazyInitializer","handler"})
     private Beginner beginner;
-    //@ManyToOne(fetch = FetchType.LAZY)
-    //@JoinColumn(name = "recipe_id",nullable = false)
-    //@JsonIgnoreProperties({"hibernateLazyInitializer","handler"})
-    //private Recipe recipe;
-
+ 
 }
