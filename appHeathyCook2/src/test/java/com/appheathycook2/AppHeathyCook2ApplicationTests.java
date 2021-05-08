@@ -1,0 +1,13 @@
+package com.appheathycook2;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class AppHeathyCook2ApplicationTests {
+
+    @Test
+    void contextLoads() {
+    }
+
+}
