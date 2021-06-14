@@ -26,17 +26,17 @@ public class RecipeIngredient implements Serializable{
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @Column(name = "quantity",nullable = false,length = 50)
-    private Integer name;
+    private Integer quantity;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "recipe_id",nullable = false)
     @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
     private Recipe recipe;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    /*@ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "ingredient_id",nullable = false)
     @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
-    private Ingredient ingredient;
+    private Ingredient ingredient;*/
 
 
 }

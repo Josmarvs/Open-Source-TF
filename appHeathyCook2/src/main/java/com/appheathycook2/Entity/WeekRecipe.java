@@ -16,10 +16,10 @@ public class WeekRecipe implements Serializable {
     @Column(name = "added_date",nullable = false)
     @Temporal(TemporalType.DATE)
     private Date added_date;
-    @ManyToOne(fetch = FetchType.LAZY)
+    /*@ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "beginner_id",nullable = false)
     @JsonIgnoreProperties({"hibernateLazyInitializer","handler"})
-    private Beginner beginner;
+    private Beginner beginner;*/
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "recipe_id",nullable = false)
     @JsonIgnoreProperties({"hibernateLazyInitializer","handler"})

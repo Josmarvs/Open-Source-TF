@@ -27,8 +27,6 @@ import java.util.Optional;
 @Api(tags = "WeekRecipe", value = "Service Web RESTFul de WeekRecipes")
 public class WeekRecipeController {
 
-    @Autowired
-    private IWeekRecipeRepository weekRecipeRepository;
 
     @Autowired
     private IWeekRecipeService weekRecipeService;
@@ -79,10 +77,10 @@ public class WeekRecipeController {
             @ApiResponse(code = 201, message = "weekRecipe encontrados"),
             @ApiResponse(code = 404, message = "weekRecipe no encontrados")
     })
-    public ResponseEntity<List<WeekRecipe>> findWeekRecipeByDate(@RequestParam("publication_Date") String publication_string) {
+    public ResponseEntity<List<WeekRecipe>> findWeekRecipeByDate(@RequestParam("added_date") String publication_string) {
         try {
-            Date publication_Date = ParseDate(publication_string);
-            List<WeekRecipe> weekRecipes = weekRecipeService.find(publication_Date);
+            Date added_Date = ParseDate(publication_string);
+            List<WeekRecipe> weekRecipes = weekRecipeService.find(added_Date);
             if (weekRecipes.size() > 0)
                 return new ResponseEntity<List<WeekRecipe>>(weekRecipes, HttpStatus.OK);
             else

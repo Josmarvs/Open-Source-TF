@@ -1,5 +1,6 @@
 package com.appheathycook2.Repository;
 
+import com.appheathycook2.Entity.Ingredient;
 import com.appheathycook2.Entity.RecipeIngredient;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
