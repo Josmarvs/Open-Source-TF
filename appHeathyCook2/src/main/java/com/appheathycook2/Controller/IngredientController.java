@@ -16,6 +16,7 @@ import javax.validation.Valid;
 import java.util.List;
 import java.util.Optional;
 
+@CrossOrigin
 @RestController
 @RequestMapping("/api/ingredients")
 @Api(tags = "Ingredient", value = "Service Web RESTFul de Ingredients")

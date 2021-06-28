@@ -22,6 +22,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
+@CrossOrigin
 @RestController
 @RequestMapping("/api/comments")
 @Api(tags = "Comment", value = "Service Web RESTFul de Comments")

@@ -14,9 +14,9 @@ import java.util.Date;
 public class JwtProvider {
 
     private static final Logger logger = LoggerFactory.getLogger(JwtProvider.class);
-    @Value("${appbookings.jwtSecret}")
+    @Value("${apphealthycook.jwtSecret}")
     private String jwtSecret;
-    @Value("${appbookings.jwtExpiration}")
+    @Value("${apphealthycook.jwtExpiration}")
     private int jwtExpiration;
 
     public String generateJwtToken(Authentication authentication){

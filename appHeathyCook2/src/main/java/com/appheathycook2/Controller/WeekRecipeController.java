@@ -22,6 +22,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
+@CrossOrigin
 @RestController
 @RequestMapping("/api/weekRecipes")
 @Api(tags = "WeekRecipe", value = "Service Web RESTFul de WeekRecipes")
